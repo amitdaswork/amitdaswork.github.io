@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amit Das - Portfolio</title>
+    <title>SEVAA Website Templates Collection</title>
     <style>
         * {
             margin: 0;
@@ -13,113 +13,92 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: #2c3e50;
+            padding: 2rem;
         }
 
         .container {
             text-align: center;
-            max-width: 800px;
-            padding: 2rem;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
+            max-width: 1200px;
+            width: 100%;
+            background: #ffffff;
             border-radius: 20px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            padding: 3rem;
         }
 
-        .profile-section {
+        .header {
             margin-bottom: 3rem;
-        }
-
-        .profile-photo {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin: 0 auto 2rem;
-            background: rgba(255, 255, 255, 0.2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-            border: 3px solid rgba(255, 255, 255, 0.3);
         }
 
         h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
-            background: linear-gradient(45deg, #fff, #e0e0e0);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: #2c3e50;
+            font-weight: 700;
         }
 
         .subtitle {
             font-size: 1.2rem;
             margin-bottom: 2rem;
-            opacity: 0.9;
+            color: #6c757d;
+            font-weight: 500;
         }
 
         .description {
             font-size: 1.1rem;
             line-height: 1.6;
             margin-bottom: 3rem;
-            opacity: 0.8;
+            color: #495057;
         }
 
-        .projects-section {
-            margin-bottom: 3rem;
-        }
-
-        .projects-title {
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            color: #fff;
-        }
-
-        .projects-grid {
+        .templates-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             margin-bottom: 3rem;
         }
 
-        .project-card {
-            background: rgba(255, 255, 255, 0.15);
-            border-radius: 15px;
+        .template-card {
+            background: #ffffff;
+            border-radius: 12px;
             padding: 2rem;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid #e9ecef;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
         }
 
-        .project-card:hover {
+        .template-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
         }
 
-        .project-card h3 {
+        .template-card h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
-            color: #fff;
+            color: #2c3e50;
+            font-weight: 600;
         }
 
-        .project-card p {
+        .template-card p {
             margin-bottom: 1.5rem;
-            opacity: 0.9;
+            color: #6c757d;
             line-height: 1.6;
         }
 
         .btn {
             display: inline-block;
             padding: 12px 30px;
-            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
             color: white;
             text-decoration: none;
-            border-radius: 25px;
+            border-radius: 8px;
             font-weight: 600;
             transition: all 0.3s ease;
             border: none;
@@ -129,36 +108,48 @@
 
         .btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
         }
 
-        .btn-secondary {
-            background: linear-gradient(45deg, #4834d4, #686de0);
+        .btn-default {
+            background: #007bff;
         }
 
-        .btn-secondary:hover {
-            box-shadow: 0 8px 25px rgba(72, 52, 212, 0.4);
+        .btn-default:hover {
+            background: #0056b3;
+            box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
         }
 
-        .social-links {
+        .btn-academic {
+            background: #17a2b8;
+        }
+
+        .btn-academic:hover {
+            background: #117a8b;
+            box-shadow: 0 8px 25px rgba(23, 162, 184, 0.3);
+        }
+
+        .btn-corporate {
+            background: #6f42c1;
+        }
+
+        .btn-corporate:hover {
+            background: #59359a;
+            box-shadow: 0 8px 25px rgba(111, 66, 193, 0.3);
+        }
+
+        .btn-minimalist {
+            background: #6c757d;
+        }
+
+        .btn-minimalist:hover {
+            background: #545b62;
+            box-shadow: 0 8px 25px rgba(108, 117, 125, 0.3);
+        }
+
+        .footer {
             margin-top: 2rem;
-        }
-
-        .social-links a {
-            display: inline-block;
-            margin: 0 15px;
-            padding: 10px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 50%;
-            transition: all 0.3s ease;
-            color: white;
-            text-decoration: none;
-            font-size: 1.5rem;
-        }
-
-        .social-links a:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: translateY(-3px);
+            color: #6c757d;
+            font-size: 0.9rem;
         }
 
         @media (max-width: 768px) {
@@ -171,7 +162,7 @@
                 font-size: 2.5rem;
             }
 
-            .projects-grid {
+            .templates-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -179,44 +170,62 @@
 </head>
 <body>
     <div class="container">
-        <div class="profile-section">
-            <div class="profile-photo">
-                👨‍💻
-            </div>
-            <h1>Amit Das</h1>
-            <p class="subtitle">Software Architect</p>
+        <div class="header">
+            <h1>SEVAA Website Templates</h1>
+            <p class="subtitle">Collection of Website Templates</p>
             <p class="description">
-                Welcome to my GitHub Pages portfolio! I'm passionate about creating meaningful digital experiences 
-                and contributing to community development through technology and social initiatives.
+                Here we have a collection of templates for SEVAA websites. 
+                Each template offers a unique design approach for presenting 
+                the Society for Envisioning Vivekananda in Awareness and Action's 
+                mission and programs.
             </p>
         </div>
 
-        <div class="projects-section">
-            <h2 class="projects-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>SEVAA Organization Website</h3>
-                    <p>A comprehensive website for the Society for Envisioning Vivekananda in Awareness and Action (SEVAA) - a non-profit organization focused on education, livelihood, community health, and environmental initiatives.</p>
-                    <a href="Sevaa/index.html" class="btn">Visit SEVAA Website</a>
-                </div>
-                
-                <div class="project-card">
-                    <h3>More Projects Coming Soon</h3>
-                    <p>I'm continuously working on new projects and initiatives. Stay tuned for more exciting developments in web development, community engagement, and social impact projects.</p>
-                    <a href="#" class="btn btn-secondary">GitHub Repository</a>
-                </div>
+        <div class="templates-grid">
+            <div class="template-card">
+                <h3>Default Template</h3>
+                <p>
+                    A comprehensive and traditional design showcasing all aspects 
+                    of SEVAA's work with detailed sections for programs, about us, 
+                    and community engagement.
+                </p>
+                <a href="default/index.html" class="btn btn-default">View Template</a>
+            </div>
+            
+            <div class="template-card">
+                <h3>Academic Template</h3>
+                <p>
+                    Research-focused design presenting SEVAA as an academic institution 
+                    with emphasis on publications, methodology, and evidence-based 
+                    social intervention programs.
+                </p>
+                <a href="academic/index.html" class="btn btn-academic">View Template</a>
+            </div>
+            
+            <div class="template-card">
+                <h3>Corporate Template</h3>
+                <p>
+                    Professional business-oriented design highlighting partnerships, 
+                    impact metrics, and corporate collaboration opportunities for 
+                    CSR and institutional partnerships.
+                </p>
+                <a href="corporate/index.html" class="btn btn-corporate">View Template</a>
+            </div>
+            
+            <div class="template-card">
+                <h3>Minimalist Template</h3>
+                <p>
+                    Clean and focused design emphasizing simplicity and clarity. 
+                    Perfect for showcasing SEVAA's core mission with elegant 
+                    typography and streamlined content presentation.
+                </p>
+                <a href="minimalist/index.html" class="btn btn-minimalist">View Template</a>
             </div>
         </div>
 
-        <div class="social-links">
-            <a href="https://github.com/amitdaswork" title="GitHub">📚</a>
-            <a href="mailto:your.email@example.com" title="Email">✉️</a>
-            <a href="#" title="LinkedIn">💼</a>
+        <div class="footer">
+            <p>&copy; 2024 SEVAA - Society for Envisioning Vivekananda in Awareness and Action. All templates showcase our commitment to community service and social development.</p>
         </div>
-
-        <p style="margin-top: 2rem; opacity: 0.7; font-size: 0.9rem;">
-            &copy; 2024 Amit Das. Built with passion for community service and technology.
-        </p>
     </div>
 </body>
 </html>
